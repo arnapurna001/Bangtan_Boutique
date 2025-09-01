@@ -33,4 +33,15 @@ export const products: Product[] = [
     'data-ai-hint': 'pink bunny',
     description: "Bring home the energetic and tough bunny Cooky. This adorable plush, designed by Jungkook, is ready for any adventure.",
   },
+  {
+    id: 15,
+    name: 'BT21 Keychain',
+    category: 'Keychains',
+    price: 12.99,
+    image: 'https://www.lovekarnival.com/cdn/shop/products/BT21stuffedtoykeychain1.jpg',
+    rating: 4.7,
+    popularity: 88,
+    'data-ai-hint': 'keychain toy',
+    description: "Take your favorite BT21 characters wherever you go with this adorable keychain. A perfect accessory for any ARMY's bag or keys.",
+  },
 ];
