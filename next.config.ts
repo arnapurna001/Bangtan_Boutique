@@ -39,6 +39,12 @@ const nextConfig: NextConfig = {
         hostname: 'img.joomcdn.net',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.pinimg.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

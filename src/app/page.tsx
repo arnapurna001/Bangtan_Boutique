@@ -16,7 +16,7 @@ export default function Home() {
         <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center text-center text-white overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image
-              src="https://picsum.photos/1200/800?random=13"
+              src="https://i.pinimg.com/600x315/99/87/77/99877737a0e73dab608471212e308a8d.jpg"
               alt="BTS concert"
               fill
               className="object-cover"
