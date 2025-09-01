@@ -24,8 +24,6 @@ export default function AboutPage() {
                   alt="Arnapurna Hota"
                   fill
                   className="object-cover"
-                  width={400}
-                  height={400}
                   data-ai-hint="founder portrait"
                 />
               </div>
