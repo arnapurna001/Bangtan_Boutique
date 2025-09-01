@@ -9,8 +9,10 @@ import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogContent,
+  DialogTitle,
 } from '@/components/ui/dialog';
 import { useToast } from '@/hooks/use-toast';
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
 interface ProductViewDialogProps {
   product: Product | null;
@@ -36,6 +38,9 @@ export function ProductViewDialog({ product, isOpen, onOpenChange }: ProductView
   return (
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-4xl p-0">
+        <VisuallyHidden>
+          <DialogTitle>{product.name}</DialogTitle>
+        </VisuallyHidden>
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="relative aspect-square">
             <Image
