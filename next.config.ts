@@ -51,6 +51,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.lovekarnival.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'encrypted-tbn3.gstatic.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

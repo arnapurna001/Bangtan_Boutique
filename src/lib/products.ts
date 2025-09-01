@@ -44,4 +44,15 @@ export const products: Product[] = [
     'data-ai-hint': 'keychain toy',
     description: "Take your favorite BT21 characters wherever you go with this adorable keychain. A perfect accessory for any ARMY's bag or keys.",
   },
+  {
+    id: 16,
+    name: 'BT21 Koya Cushion',
+    category: 'Stuffed Toys',
+    price: 34.99,
+    image: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ1blJhuoJBj5iSlp5sxHGPk1n-oHADP3jAL5U6ohVJN_Oo2zmR2NoDhS8LHpKo2cxcXaNozHqYcSdbnGZHwEBzpTj1EuOktytvQN9PWCz8manIRlgWhmrfaQ',
+    rating: 4.9,
+    popularity: 90,
+    'data-ai-hint': 'cushion toy',
+    description: 'A comfortable and cute Koya cushion to decorate your space. Perfect for relaxing while listening to your favorite BTS tracks.'
+  }
 ];
