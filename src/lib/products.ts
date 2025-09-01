@@ -16,7 +16,7 @@ export const products: Product[] = [
     name: 'Plush Chimmy Toy',
     category: 'Stuffed Toys',
     price: 29.99,
-    image: 'https://picsum.photos/400/400?random=1',
+    image: 'https://m.media-amazon.com/images/I/51lNu0OWpwL._SX300_SY300_QL70_FMwebp_.jpg',
     rating: 4.8,
     popularity: 95,
     'data-ai-hint': 'plush toy',
