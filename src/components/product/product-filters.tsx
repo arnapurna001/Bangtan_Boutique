@@ -64,7 +64,7 @@ export function ProductFilters({
           </div>
         </div>
 
-        <Accordion type="single" collapsible defaultValue="filters" className="w-full">
+        <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="filters" className="border-b-0">
             <AccordionTrigger className="text-base font-semibold hover:no-underline">Advanced Filters</AccordionTrigger>
             <AccordionContent className="pt-4 space-y-6">
