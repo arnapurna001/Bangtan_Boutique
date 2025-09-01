@@ -78,7 +78,7 @@ export default function ShopPage() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
-          <aside className="lg:col-span-1 sticky top-24">
+          <aside className="lg:col-span-1 lg:sticky lg:top-24">
             <ProductFilters
               searchTerm={searchTerm}
               onSearchTermChange={setSearchTerm}
