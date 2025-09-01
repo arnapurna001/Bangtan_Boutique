@@ -65,7 +65,7 @@ export default function Home() {
               </div>
               <div className="relative aspect-square rounded-lg overflow-hidden shadow-lg">
                 <Image 
-                  src="https://picsum.photos/600/600?random=14"
+                  src="https://img.joomcdn.net/4d8e618a2c17cc6c2776be03eefa37c066191908_original.jpeg"
                   alt="Happy fans with merchandise"
                   fill
                   className="object-cover"
