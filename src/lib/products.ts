@@ -13,7 +13,7 @@ export type Product = {
 export const products: Product[] = [
   {
     id: 13,
-    name: 'Plush Koya Toy',
+    name: 'RJ',
     category: 'Stuffed Toys',
     price: 29.99,
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc-1EsQM6wW5se-u2SHxlhXqn8BkiRi6hwug&s',
