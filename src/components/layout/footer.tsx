@@ -1,8 +1,19 @@
 import React from 'react';
 import Link from 'next/link';
-import { Twitter, Instagram, Facebook, Youtube } from 'lucide-react';
+import { Instagram, Facebook, Youtube } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Logo } from './logo';
+
+const XLogo = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512 512"
+    className="h-5 w-5"
+    fill="currentColor"
+  >
+    <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+  </svg>
+);
 
 export function AppFooter() {
   return (
@@ -29,8 +40,8 @@ export function AppFooter() {
               <h3 className="font-semibold text-foreground mb-4">Follow Us</h3>
               <div className="flex items-center space-x-2">
                 <Button variant="ghost" size="icon" asChild>
-                  <a href="https://twitter.com/bts_bighit" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                    <Twitter className="h-5 w-5" />
+                  <a href="https://x.com/bts_bighit" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)">
+                    <XLogo />
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" asChild>
