@@ -22,4 +22,15 @@ export const products: Product[] = [
     'data-ai-hint': 'plush toy',
     description: "Add the sleepy and smart Koya to your collection. This soft and cuddly plush toy, designed by RM, is perfect for any ARMY.",
   },
+  {
+    id: 14,
+    name: 'Cooky',
+    category: 'Stuffed Toys',
+    price: 24.99,
+    image: 'https://m.media-amazon.com/images/I/51lNu0OWpwL._SX300_SY300_QL70_FMwebp_.jpg',
+    rating: 4.9,
+    popularity: 95,
+    'data-ai-hint': 'pink bunny',
+    description: "Bring home the energetic and tough bunny Cooky. This adorable plush, designed by Jungkook, is ready for any adventure.",
+  },
 ];
