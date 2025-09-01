@@ -26,7 +26,7 @@ export function AppFooter() {
             </Link>
             <p className="text-sm text-muted-foreground">Your one-stop shop for all things BTS.</p>
           </div>
-          <div className="grid grid-cols-2 md:col-span-3 gap-8">
+          <div className="grid grid-cols-3 md:col-span-3 gap-8">
             <div>
               <h3 className="font-semibold text-foreground mb-4">Shop</h3>
               <ul className="space-y-2">
@@ -34,6 +34,13 @@ export function AppFooter() {
                 <li><Link href="/shop?category=Stuffed+Toys" className="text-sm text-muted-foreground hover:text-primary">Stuffed Toys</Link></li>
                 <li><Link href="/shop?category=Keychains" className="text-sm text-muted-foreground hover:text-primary">Keychains</Link></li>
                 <li><Link href="/shop?category=BTS+Bombs" className="text-sm text-muted-foreground hover:text-primary">BTS Bombs</Link></li>
+              </ul>
+            </div>
+             <div>
+              <h3 className="font-semibold text-foreground mb-4">Company</h3>
+              <ul className="space-y-2">
+                <li><Link href="/about" className="text-sm text-muted-foreground hover:text-primary">About Us</Link></li>
+                <li><Link href="/contact" className="text-sm text-muted-foreground hover:text-primary">Contact</Link></li>
               </ul>
             </div>
             <div>
