@@ -8,7 +8,6 @@ import { ProductGrid } from '@/components/product/product-grid';
 import { ProductFilters } from '@/components/product/product-filters';
 import { ProductViewDialog } from '@/components/product/product-view-dialog';
 import { Recommendations } from '@/components/recommendations/recommendations';
-import { cn } from '@/lib/utils';
 
 export default function ShopPage() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -17,15 +16,6 @@ export default function ShopPage() {
   const [sortBy, setSortBy] = useState<'popularity' | 'price-asc' | 'price-desc'>('popularity');
   const [viewingHistory, setViewingHistory] = useState<Product[]>([]);
   const [activeProduct, setActiveProduct] = useState<Product | null>(null);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const handleProductClick = (product: Product) => {
     setActiveProduct(product);
@@ -76,12 +66,6 @@ export default function ShopPage() {
 
   return (
     <>
-      <div
-        className={cn(
-          'fixed inset-0 -z-10 transition-opacity duration-500',
-          isScrolled ? 'bg-background/80 backdrop-blur-xl' : 'opacity-0'
-        )}
-      />
       <AppHeader />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="text-center mb-12">
