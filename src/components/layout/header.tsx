@@ -33,9 +33,11 @@ export function AppHeader() {
           </nav>
 
           <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon">
-              <User className="h-5 w-5" />
-              <span className="sr-only">User Profile</span>
+            <Button variant="ghost" size="icon" asChild>
+              <Link href="/login">
+                <User className="h-5 w-5" />
+                <span className="sr-only">User Profile</span>
+              </Link>
             </Button>
             <Button variant="ghost" size="icon" className="relative" onClick={() => setIsCartOpen(true)}>
               {cartCount > 0 && (
