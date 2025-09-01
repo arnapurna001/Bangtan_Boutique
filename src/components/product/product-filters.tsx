@@ -14,6 +14,12 @@ import {
 } from '@/components/ui/select';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Search } from 'lucide-react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 
 interface ProductFiltersProps {
   searchTerm: string;
@@ -58,47 +64,54 @@ export function ProductFilters({
           </div>
         </div>
 
-        <div className="space-y-2">
-          <Label>Category</Label>
-          <RadioGroup value={category} onValueChange={onCategoryChange}>
-            {categories.map((cat) => (
-              <div key={cat} className="flex items-center space-x-2">
-                <RadioGroupItem value={cat} id={`cat-${cat}`} />
-                <Label htmlFor={`cat-${cat}`} className="font-normal capitalize">{cat}</Label>
+        <Accordion type="single" collapsible defaultValue="filters" className="w-full">
+          <AccordionItem value="filters" className="border-b-0">
+            <AccordionTrigger className="text-base font-semibold hover:no-underline">Advanced Filters</AccordionTrigger>
+            <AccordionContent className="pt-4 space-y-6">
+              <div className="space-y-2">
+                <Label>Category</Label>
+                <RadioGroup value={category} onValueChange={onCategoryChange}>
+                  {categories.map((cat) => (
+                    <div key={cat} className="flex items-center space-x-2">
+                      <RadioGroupItem value={cat} id={`cat-${cat}`} />
+                      <Label htmlFor={`cat-${cat}`} className="font-normal capitalize">{cat}</Label>
+                    </div>
+                  ))}
+                </RadioGroup>
               </div>
-            ))}
-          </RadioGroup>
-        </div>
 
-        <div className="space-y-2">
-          <div className="flex justify-between items-center">
-            <Label>Price Range</Label>
-            <span className="text-sm text-muted-foreground">
-              ${priceRange[0]} - ${priceRange[1]}
-            </span>
-          </div>
-          <Slider
-            min={0}
-            max={100}
-            step={1}
-            value={[priceRange[1]]}
-            onValueChange={(value) => onPriceRangeChange([priceRange[0], value[0]])}
-          />
-        </div>
+              <div className="space-y-2">
+                <div className="flex justify-between items-center">
+                  <Label>Price Range</Label>
+                  <span className="text-sm text-muted-foreground">
+                    ${priceRange[0]} - ${priceRange[1]}
+                  </span>
+                </div>
+                <Slider
+                  min={0}
+                  max={100}
+                  step={1}
+                  value={[priceRange[1]]}
+                  onValueChange={(value) => onPriceRangeChange([priceRange[0], value[0]])}
+                />
+              </div>
 
-        <div className="space-y-2">
-          <Label htmlFor="sort-by">Sort by</Label>
-          <Select value={sortBy} onValueChange={onSortByChange}>
-            <SelectTrigger id="sort-by">
-              <SelectValue placeholder="Sort products" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="popularity">Popularity</SelectItem>
-              <SelectItem value="price-asc">Price: Low to High</SelectItem>
-              <SelectItem value="price-desc">Price: High to Low</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
+              <div className="space-y-2">
+                <Label htmlFor="sort-by">Sort by</Label>
+                <Select value={sortBy} onValueChange={onSortByChange}>
+                  <SelectTrigger id="sort-by">
+                    <SelectValue placeholder="Sort products" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="popularity">Popularity</SelectItem>
+                    <SelectItem value="price-asc">Price: Low to High</SelectItem>
+                    <SelectItem value="price-desc">Price: High to Low</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </CardContent>
     </Card>
   );
