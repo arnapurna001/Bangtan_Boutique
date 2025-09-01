@@ -24,7 +24,7 @@ export function AppHeader() {
             <Link href="/" className="transition-colors hover:text-primary">
               Home
             </Link>
-            <Link href="/" className="transition-colors hover:text-primary">
+            <Link href="/shop" className="transition-colors hover:text-primary">
               Shop
             </Link>
             <Link href="/" className="transition-colors hover:text-primary">

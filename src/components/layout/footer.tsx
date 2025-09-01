@@ -30,10 +30,10 @@ export function AppFooter() {
             <div>
               <h3 className="font-semibold text-foreground mb-4">Shop</h3>
               <ul className="space-y-2">
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary">All Products</Link></li>
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary">Stuffed Toys</Link></li>
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary">Keychains</Link></li>
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary">BTS Bombs</Link></li>
+                <li><Link href="/shop" className="text-sm text-muted-foreground hover:text-primary">All Products</Link></li>
+                <li><Link href="/shop?category=Stuffed+Toys" className="text-sm text-muted-foreground hover:text-primary">Stuffed Toys</Link></li>
+                <li><Link href="/shop?category=Keychains" className="text-sm text-muted-foreground hover:text-primary">Keychains</Link></li>
+                <li><Link href="/shop?category=BTS+Bombs" className="text-sm text-muted-foreground hover:text-primary">BTS Bombs</Link></li>
               </ul>
             </div>
             <div>
