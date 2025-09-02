@@ -67,10 +67,7 @@ const prompt = ai.definePrompt({
   - {{this}}
   {{/each}}
 
-  Consider the viewing history to recommend related products.
-
-  Show product details often?
-  {{#tool_call oftenShowDetailsTool frequency='high'}}{{/tool_call}}
+  Consider the viewing history to recommend related products. If the user's history suggests they like variety, use the oftenShowDetailsTool with high frequency.
   `,
 });
 
