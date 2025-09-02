@@ -63,6 +63,12 @@ const nextConfig: NextConfig = {
         hostname: 'images-cdn.ubuy.co.in',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: '5.imimg.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

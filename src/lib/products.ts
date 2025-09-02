@@ -98,5 +98,16 @@ export const products: Product[] = [
     popularity: 91,
     'data-ai-hint': 'masked horse',
     description: 'Bring home the mysterious and talented dancer Mang. This masked horse plush, designed by J-Hope, is ready to dance its way into your heart.'
+  },
+  {
+    id: 21,
+    name: 'Van',
+    category: 'Stuffed Toys',
+    price: 29.99,
+    image: 'https://5.imimg.com/data5/SELLER/Default/2021/12/MA/PK/TW/124914915/van-1.jpg',
+    rating: 4.8,
+    popularity: 90,
+    'data-ai-hint': 'robot plushie',
+    description: 'The guardian space robot Van, who protects BT21. This plush is a must-have for any collector.'
   }
 ];
