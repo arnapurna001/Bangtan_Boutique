@@ -75,6 +75,12 @@ const nextConfig: NextConfig = {
         hostname: 'i.etsystatic.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.tinyminymo.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

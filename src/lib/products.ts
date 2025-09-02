@@ -120,5 +120,16 @@ export const products: Product[] = [
     popularity: 98,
     'data-ai-hint': 'light stick',
     description: 'The official BTS light stick, a must-have for any concert-going ARMY. Light up the stadium and show your support!'
+  },
+  {
+    id: 23,
+    name: 'BTS Fire Miniatures',
+    category: 'Miniatures',
+    price: 39.99,
+    image: 'https://www.tinyminymo.com/cdn/shop/files/Mini-BTS-Action-Figure-13.jpg?v=1741540235&width=720',
+    rating: 4.9,
+    popularity: 96,
+    'data-ai-hint': 'action figures',
+    description: 'A set of high-quality miniature action figures featuring the BTS members in their iconic "Fire" music video outfits.'
   }
 ];
