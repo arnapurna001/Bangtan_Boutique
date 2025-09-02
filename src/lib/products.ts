@@ -54,5 +54,16 @@ export const products: Product[] = [
     popularity: 90,
     'data-ai-hint': 'cushion toy',
     description: 'A comfortable and cute Koya cushion to decorate your space. Perfect for relaxing while listening to your favorite BTS tracks.'
+  },
+  {
+    id: 17,
+    name: 'Tata',
+    category: 'Stuffed Toys',
+    price: 29.99,
+    image: 'https://images-cdn.ubuy.co.in/6389cd1154410779180d5656-aileen-bts-bt21-stuffed-toy-7-inches.jpg',
+    rating: 4.8,
+    popularity: 94,
+    'data-ai-hint': 'heart plushie',
+    description: 'Bring home the curious and unique Tata. This adorable heart-shaped plush, designed by V, is a perfect cuddle companion.'
   }
 ];
