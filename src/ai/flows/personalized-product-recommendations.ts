@@ -70,8 +70,8 @@ const prompt = ai.definePrompt({
   Consider the viewing history to recommend related products.
 
   Show product details often?
-  {{#tool_call oftenShowDetailsTool frequency='high'}}
-  `, //  {{#tool_call oftenShowDetailsTool frequency='high'}}
+  {{#tool_call oftenShowDetailsTool frequency='high'}}{{/tool_call}}
+  `,
 });
 
 const personalizedProductRecommendationsFlow = ai.defineFlow(
