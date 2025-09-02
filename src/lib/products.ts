@@ -109,5 +109,16 @@ export const products: Product[] = [
     popularity: 90,
     'data-ai-hint': 'robot plushie',
     description: 'The guardian space robot Van, who protects BT21. This plush is a must-have for any collector.'
+  },
+  {
+    id: 22,
+    name: 'ARMY Bomb',
+    category: 'BTS Bombs',
+    price: 59.99,
+    image: 'https://i.etsystatic.com/35154069/r/il/e8adc9/3781889158/il_570xN.3781889158_89vz.jpg',
+    rating: 4.9,
+    popularity: 98,
+    'data-ai-hint': 'light stick',
+    description: 'The official BTS light stick, a must-have for any concert-going ARMY. Light up the stadium and show your support!'
   }
 ];
