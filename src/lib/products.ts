@@ -65,5 +65,38 @@ export const products: Product[] = [
     popularity: 94,
     'data-ai-hint': 'heart plushie',
     description: 'Bring home the curious and unique Tata. This adorable heart-shaped plush, designed by V, is a perfect cuddle companion.'
+  },
+  {
+    id: 18,
+    name: 'Chimmy',
+    category: 'Stuffed Toys',
+    price: 29.99,
+    image: 'https://images-cdn.ubuy.co.in/634e48659c9f552b404b4fd5-bt21-official-merchandise-baby-chimmy.jpg',
+    rating: 4.8,
+    popularity: 92,
+    'data-ai-hint': 'yellow puppy',
+    description: 'Get the passionate and hardworking Chimmy plush toy. This adorable yellow puppy, designed by Jimin, will brighten up any room.'
+  },
+  {
+    id: 19,
+    name: 'Shooky',
+    category: 'Stuffed Toys',
+    price: 22.99,
+    image: 'https://m.media-amazon.com/images/I/61fp9GH6orL.jpg',
+    rating: 4.7,
+    popularity: 89,
+    'data-ai-hint': 'cookie plushie',
+    description: 'Add the mischievous and sweet Shooky to your collection. This little cookie plush, designed by Suga, is full of personality.'
+  },
+  {
+    id: 20,
+    name: 'Mang',
+    category: 'Stuffed Toys',
+    price: 29.99,
+    image: 'https://m.media-amazon.com/images/I/51b4NOyhx9L.jpg',
+    rating: 4.8,
+    popularity: 91,
+    'data-ai-hint': 'masked horse',
+    description: 'Bring home the mysterious and talented dancer Mang. This masked horse plush, designed by J-Hope, is ready to dance its way into your heart.'
   }
 ];
